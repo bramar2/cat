@@ -1,0 +1,19 @@
+(n k)
+(n+k-1 k) if rep is allowed
+(n-1 k) - (n-1 k-1) = (n-2k)/n * (n k)
+(n-1 k)             = (n-k)/n * (n k)
+
+(n h)*(n-h k) = (n k)*(n-k h) = (n h+k)*(h+k n)
+
+For constant n:
+(n k) = (n-k+1)/k * (n k-1)
+
+
+Sum k=0->n (n k) = 2^n
+Sum k=0->n k*(n k) = n * 2^(n-1)
+Sum k=0->n k^2*(n k) = (n+n^2)* 2^(n-2)
+Sum j=0->k (m j)(n-m k-j) = (n k)
+Sum j=0->k (m j)(n k-j) = (n+m k)
+Sum m=k->n (m k) = (n+1 k+1)
+Sum r=0->m (n+r r) = (n+m+1 m)
+Sum k=0->ceil(n/2) (n-k k) = Fibonacci(n + 1)
